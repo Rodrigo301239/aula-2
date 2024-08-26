@@ -1,4 +1,4 @@
-function calc(){
+function calc(id1, id2, respId, operador){
     var num1 = parseFloat(document.getElementById(id1).value)
     var num2  = parseFloat(document.getElementById(id2).value)
     var resultado 
@@ -6,7 +6,7 @@ function calc(){
 
     switch (operador){
         case "+":
-            resutado = num1 + num2
+            resultado = num1 + num2
 
         break;
         case "-":
@@ -18,7 +18,7 @@ function calc(){
             
         break;
         case "/":
-        if(m2 !== 0){
+        if(num2 !== 0){
             resultado = num1 / num2
         }
         else {
